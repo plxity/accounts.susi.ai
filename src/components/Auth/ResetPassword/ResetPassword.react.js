@@ -83,7 +83,7 @@ class ResetPassword extends Component {
       }.bind(this),
       error: function(errorThrown) {
         let state = this.state;
-        state.msg = 'Please Login or Signup!';
+        state.msg = 'To reset password visit Homepage!';
         state.showDialog = true;
         this.setState(state);
       }.bind(this),
