@@ -1418,6 +1418,7 @@ class Settings extends Component {
           backgroundColor: '#F2F2F2',
           position: 'absolute',
           width: '100%',
+          minHeight: '100%',
         }}
       >
         <Dialog
@@ -1671,7 +1672,7 @@ class Settings extends Component {
                     }}
                   >
                     <span className="Link">
-                      <Link to="/delete-account">Deactivate your account</Link>
+                      <Link to="/delete-account">Delete your account</Link>
                     </span>
                   </p>
                 </div>
