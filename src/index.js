@@ -22,7 +22,7 @@ import SystemLogs from './components/Admin/SystemLogs/SystemLogs.js';
 import VerifyAccount from './components/Auth/VerifyAccount/VerifyAccount.react';
 import Login from './components/Auth/Login/Login.react';
 import NotFound from './components/NotFound/NotFound.react';
-
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
 import './index.css';
 
 const styles = {
@@ -119,7 +119,7 @@ class App extends Component {
               <Route exact path="/" component={Login} />
               <Route exact path="/signup" component={SignUp} />
               <Route exact path="/logout" component={Logout} />
-              <Route exact path="/settings" component={Settings} />
+              <ProtectedRoute exact path="/settings" component={Settings} />
               <Route exact path="/admin" component={Admin} />
               <Route exact path="/admin/users" component={Users} />
               <Route exact path="/admin/skills" component={Skills} />
