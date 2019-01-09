@@ -21,8 +21,8 @@ import {
   SystemLogs,
   SystemSettings,
   VerifyAccount,
-  Login,
   NotFound,
+  Login,
 } from './component';
 
 import './index.css';
